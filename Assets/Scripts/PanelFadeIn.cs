@@ -9,6 +9,7 @@ public class PanelFadeIn : MonoBehaviour {
 
 	void Start () {
 		fadePanel = GameObject.Find("Fade Panel").GetComponent<Image>();
+		fadePanel.canvasRenderer.SetAlpha(0.0f);
 		fadePanel.CrossFadeAlpha(0f, fadeInTime, false);
 	}
 }
