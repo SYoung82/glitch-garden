@@ -20,4 +20,12 @@ public class Attacker : MonoBehaviour {
 	void OnTriggerEnter2D() {
 		Debug.Log(name + " trigger enter");
 	}
+
+	public void SetSpeed(float speed) {
+		walkSpeed = speed;
+	}
+
+	public void StrikeCurrentTarget(float damage) {
+		Debug.Log(name + " caused damage: " + damage);
+	}
 }
